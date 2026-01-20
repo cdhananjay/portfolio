@@ -1,8 +1,9 @@
+import { Mail, Github, Linkedin } from 'lucide-react';
 const Page = () => {
     return (
-        <div>
+        <>
             posts
-        </div>
+        </>
     );
 };
 

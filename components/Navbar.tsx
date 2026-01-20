@@ -18,10 +18,10 @@ const pages : {name: string, link: string}[] = [
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center sticky top-0 z-50 bg-background/50 backdrop-blur-md" >
-            <div className="flex space-between items-center">
+        <nav className="flex justify-between items-center sticky top-0 z-50 bg-background/75 backdrop-blur-lg" >
+            <div className="flex space-between items-center gap-2">
                 {pages.map((page) => (
-                    <Link key={page.name} href={`/${page.link}`} className="mx-2 hover:font-bold" >{page.name}</Link>
+                    <Link key={page.name} href={`${page.link}`} className="text-muted-foreground hover:text-foreground" >{page.name}</Link>
                 ))}
             </div>
             <div className="flex justify-center items-center">
