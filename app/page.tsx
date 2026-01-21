@@ -1,24 +1,13 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Link from "next/link";
 import Project from "@/components/Project"
-import type {projectProp} from "@/components/Project";
-const projects: projectProp[] = [
-    {
-        image: '/spoticry.png',
-        title: "spoticry",
-        description: "a website which roasts you based on your spotify",
-        tags: ["fullstack", "nextjs", "gemini API", "spotify API", "better-auth"],
-        githubLink: "https://github.com/cdhananjay/spoticry",
-        liveLink: "https://spoticry-roastme.vercel.app",
-    },
-    {
-        image: '/spoticry.png',
-        title: "test",
-        description: "a long description for a tiny project lmao",
-        tags: ["idk", "woah"],
-        githubLink: "e",
-    }
-]
+import { Button } from "@/components/ui/button";
+import {FileText} from "lucide-react";
+import SocialIcons from "@/components/SocialIcons";
+import TabItem from "@/components/TabItem";
+import {featuredProjects} from "@/data/projects";
+import {educationItems} from "@/data/education";
+
 function getAge() {
     const today = new Date();
     const birthDate = new Date("2006-12-18");
@@ -29,6 +18,7 @@ function getAge() {
     }
     return age;
 }
+
 export default function Home() {
   return (
       <main>
@@ -36,15 +26,21 @@ export default function Home() {
               <h1 className="text-3xl font-bold" >hi, im Dhananjay</h1>
               <p>{getAge()} y/o aspiring software engineer from India</p>
               <p>freshmen @iiitn cse, learning webdev</p>
+              <div className="flex items-center gap-2 my-2" >
+                  <Button ><Link target="_blank" href="/resume.pdf" className="flex items-center gap-1">Resume<FileText /></Link></Button>
+                  <SocialIcons/>
+              </div>
           </section>
 
-          <Tabs defaultValue="work" className="w-full py-2 my-5">
+          <Tabs defaultValue="education" className="w-full py-2 my-5">
+              {/*default to work later*/}
               <TabsList className="w-full" >
                   <TabsTrigger value="work">Work</TabsTrigger>
                   <TabsTrigger value="education">Education</TabsTrigger>
               </TabsList>
               <TabsContent value="work">peak unemployment</TabsContent>
-              <TabsContent value="education">to be updated</TabsContent>
+              <TabsContent value="education">
+                  {educationItems.map(item => <TabItem key={item.title} {...item} />)}</TabsContent>
           </Tabs>
 
           <section className="my-5">
@@ -54,8 +50,8 @@ export default function Home() {
                       <Link href="/projects">view more</Link>
                   </div>
                   <div className="mt-2 flex flex-col sm:flex-row justify-center gap-3">
-                      {projects.map(project => {
-                          return <Project key={project.title} image={project.image} title={project.title} description={project.description} tags={project.tags} githubLink={project.githubLink} liveLink={project.liveLink} ></Project>
+                      {featuredProjects.map(project => {
+                          return <Project key={project.title} {...project}/>
                       })}
                   </div>
               </div>

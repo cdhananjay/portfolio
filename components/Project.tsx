@@ -40,15 +40,15 @@ const Project = ({image, title, description, tags, liveLink, githubLink} : proje
                     {description}
                 </CardDescription>
             </CardHeader>
-            <CardFooter className="flex flex-col items-start gap-1">
+            <CardFooter className="flex flex-col items-start gap-1 ">
                 <div>
                     {tags.map(tag => {
                         return <Badge className="m-1" key={tag} > {tag} </Badge>
                     })}
                 </div>
                 <div className="flex gap-1 " >
-                    <Button > <Link href={githubLink} className="flex gap-1 items-center justify-center"> <Github />view code</Link> </Button>
-                    { liveLink && <Button> <Link href={liveLink} className="flex gap-1 items-center justify-center" > <Globe />see live</Link> </Button> }
+                    <Button > <Link target="_blank" href={githubLink} className="flex gap-1 items-center justify-center"> <Github />view code</Link> </Button>
+                    { liveLink && <Button> <Link target="_blank" href={liveLink} className="flex gap-1 items-center justify-center" > <Globe />see live</Link> </Button> }
                 </div>
             </CardFooter>
         </Card>
