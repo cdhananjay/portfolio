@@ -1,6 +1,6 @@
 import type {projectProp} from "@/components/Project";
 
-export const projects: projectProp[] = [
+const projects: projectProp[] = [
     {
         image: '/spoticry.png',
         title: "spoticry",
@@ -18,5 +18,5 @@ export const projects: projectProp[] = [
         liveLink: "https://dhananjayc.vercel.app",
     },
 ]
-
+export default projects;
 export const featuredProjects: projectProp[] = [projects[0], projects[1]]

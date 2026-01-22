@@ -28,7 +28,7 @@ const TabItem = ({logo, link, period, subtitle, title, description, tags = []} :
                 <h1 className="text-xl font-bold"><Link target="_blank" href={link}>{title}</Link></h1>
                 <p>{subtitle}</p>
                 <p>{period}</p>
-                <ul>
+                <ul className="list-disc pl-5" >
                     {description.map((item, index) => {
                         return <li key={index}> {item} </li>
                     })}

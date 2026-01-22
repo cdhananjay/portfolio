@@ -1,31 +1,24 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Link from "next/link";
-import Project from "@/components/Project"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {Card, CardContent} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {FileText} from "lucide-react";
-import SocialIcons from "@/components/SocialIcons";
 import TabItem from "@/components/TabItem";
+import Project from "@/components/Project"
+import Post from "@/components/Post";
+import SocialIcons from "@/components/SocialIcons";
+import personalInfo from "@/data/personalInfo";
+import educationItems from "@/data/education";
 import {featuredProjects} from "@/data/projects";
-import {educationItems} from "@/data/education";
-
-function getAge() {
-    const today = new Date();
-    const birthDate = new Date("2006-12-18");
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const monthDifference = today.getMonth() - birthDate.getMonth();
-    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-}
+import {featuredPosts} from "@/data/posts";
 
 export default function Home() {
   return (
       <main>
           <section className="my-5" >
-              <h1 className="text-3xl font-bold" >hi, im Dhananjay</h1>
-              <p>{getAge()} y/o aspiring software engineer from India</p>
-              <p>freshmen @iiitn cse, learning webdev</p>
+              <h1 className="text-3xl font-bold" >hi, im {personalInfo.name}</h1>
+              <p>{personalInfo.age} y/o {personalInfo.role} from {personalInfo.location}</p>
+              <p>{personalInfo.description}</p>
               <div className="flex items-center gap-2 my-2" >
                   <Button ><Link target="_blank" href="/resume.pdf" className="flex items-center gap-1">Resume<FileText /></Link></Button>
                   <SocialIcons/>
@@ -38,9 +31,19 @@ export default function Home() {
                   <TabsTrigger value="work">Work</TabsTrigger>
                   <TabsTrigger value="education">Education</TabsTrigger>
               </TabsList>
-              <TabsContent value="work">peak unemployment</TabsContent>
+              <TabsContent value="work">
+                  <Card>
+                      <CardContent>
+                          <p>peak unemployment</p>
+                      </CardContent>
+                  </Card>
+              </TabsContent>
               <TabsContent value="education">
-                  {educationItems.map(item => <TabItem key={item.title} {...item} />)}</TabsContent>
+                  <Card>
+                    {educationItems.map(item => <TabItem key={item.title} {...item} />)}
+                  </Card>
+              </TabsContent>
+
           </Tabs>
 
           <section className="my-5">
@@ -56,6 +59,20 @@ export default function Home() {
                   </div>
               </div>
           </section>
+
+          {/*<section>*/}
+          {/*    <div className="flex flex-col">*/}
+          {/*        <div className="flex justify-between items-center">*/}
+          {/*            <h1 className="text-3xl font-bold" >posts</h1>*/}
+          {/*            <Link href="/posts">view more</Link>*/}
+          {/*        </div>*/}
+          {/*        <div className="mt-2 flex flex-col justify-center gap-3">*/}
+          {/*            {featuredPosts.map(post => {*/}
+          {/*                return <Post key={post.title} {...post}/>*/}
+          {/*            })}*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+          {/*</section>*/}
       </main>
   );
 }

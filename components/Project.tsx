@@ -23,7 +23,7 @@ export type projectProp = {
 
 const Project = ({image, title, description, tags, liveLink, githubLink} : projectProp) => {
     return (
-        <Card className="relative mx-auto w-full pt-0">
+        <Card className=" relative mx-auto w-full pt-0">
             <Image
                 src={image}
                 width={500}
@@ -32,15 +32,12 @@ const Project = ({image, title, description, tags, liveLink, githubLink} : proje
                 className="pt-2 px-2"
             />
             <CardHeader>
-                {/*<CardAction>*/}
-                {/*    <Badge variant="secondary">Featured</Badge>*/}
-                {/*</CardAction>*/}
-                <CardTitle>{title}</CardTitle>
+                <CardTitle className="text-lg" >{title}</CardTitle>
                 <CardDescription>
                     {description}
                 </CardDescription>
             </CardHeader>
-            <CardFooter className="flex flex-col items-start gap-1 ">
+            <CardFooter className="mt-auto flex flex-col items-start gap-1 ">
                 <div>
                     {tags.map(tag => {
                         return <Badge className="m-1" key={tag} > {tag} </Badge>
