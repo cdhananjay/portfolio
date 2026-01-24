@@ -17,6 +17,10 @@ const pages : {name: string, link: string}[] = [
     // {
     //     name: "pics",
     //     link: "/pics"
+    // },
+    // {
+    //     name: "poems",
+    //     link: "/poems"
     // }
 ]
 
