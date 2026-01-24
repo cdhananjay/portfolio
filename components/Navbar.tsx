@@ -10,10 +10,14 @@ const pages : {name: string, link: string}[] = [
         name: "projects",
         link: "/projects"
     },
-    {
-        name: "posts",
-        link: "/posts"
-    }
+    // {
+    //     name: "posts",
+    //     link: "/posts"
+    // },
+    // {
+    //     name: "pics",
+    //     link: "/pics"
+    // }
 ]
 
 const Navbar = () => {
