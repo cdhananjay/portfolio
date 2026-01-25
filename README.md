@@ -5,13 +5,6 @@ trying to be minimal.
 https://dhananjayc.vercel.app/
 ![preview_img](https://github.com/cdhananjay/portfolio/raw/main/public/portfolio.png)
 
-### todos:
-- Add loading UI wherever needed.
-- Add multiple fallback AI options.
-- Allow users to choose the roast intensity level.
-- Add a share button below the Roast.
-- Avoid taking user's email, name & and other irrelevant spotify data.
-
 ### Tech Stack
 - Next.js
 - Tailwind CSS
@@ -26,7 +19,7 @@ npm run dev
 ```
 
 ### Customization
-to be updated
+make changes to files in data
 
 ### Cost
 - Hosting: Free tier
