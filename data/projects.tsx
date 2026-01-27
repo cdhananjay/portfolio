@@ -17,6 +17,13 @@ const projects: projectProp[] = [
         githubLink: "https://github.com/cdhananjay/portfolio",
         liveLink: "https://dhananjayc.vercel.app",
     },
+    {
+        image: '/attendance-tracker.jpg',
+        title: "(unfinished)",
+        description: "a website to track your attendance",
+        tags: ["fullstack", "PERN", "Drizzle", "Neon Serverless Postgres"],
+        githubLink: "https://github.com/cdhananjay/attendance-tracker",
+    }
 ]
 export default projects;
-export const featuredProjects: projectProp[] = [projects[0], projects[1]]
+export const featuredProjects: projectProp[] = [projects[2], projects[0]]

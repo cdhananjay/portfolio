@@ -29,7 +29,7 @@ const Project = ({image, title, description, tags, liveLink, githubLink} : proje
                 width={500}
                 height={500}
                 alt={`screenshot of ${title}`}
-                className="pt-2 px-2"
+                className="pt-2 px-2 aspect-video"
             />
             <CardHeader>
                 <CardTitle className="text-lg" >{title}</CardTitle>
