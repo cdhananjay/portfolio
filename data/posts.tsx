@@ -1,6 +1,6 @@
-import {postProp} from "@/components/Post";
+import { postProp } from '@/components/Post';
 
-const posts : postProp[] = []
+const posts: postProp[] = [];
 
 export default posts;
-export const featuredPosts : postProp[] = [];
+export const featuredPosts: postProp[] = [];

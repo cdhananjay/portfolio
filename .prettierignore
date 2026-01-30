@@ -1,0 +1,20 @@
+# Ignore artifacts:
+build
+coverage
+.idea
+.next
+node_modules
+.gitignore
+.noai
+.prettierignore
+.prettierrc
+components.json
+eslint.config.mjs
+next.config.ts
+next-env.d.ts
+package.json
+package-lock.json
+postcss.config.mjs
+README.md
+tsconfig.json
+

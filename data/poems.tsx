@@ -1,5 +1,5 @@
-import type {poemProp} from "@/components/Poem"
+import type { poemProp } from '@/components/Poem';
 
-const poems : poemProp[] = []
+const poems: poemProp[] = [];
 
 export default poems;
