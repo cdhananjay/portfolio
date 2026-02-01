@@ -24,12 +24,12 @@ const projects: projectProp[] = [
         liveLink: 'https://dhananjayc.vercel.app',
     },
     {
-        image: '/attendance-tracker.png',
-        title: '(unfinished)',
-        description: 'a website to track your attendance',
-        tags: ['fullstack', 'PERN', 'Drizzle', 'Neon Serverless Postgres'],
-        githubLink: 'https://github.com/cdhananjay/attendance-tracker',
-        liveLink: 'https://attendance-tracker-0cah.onrender.com/',
+        image: '/75orDie.png',
+        title: '75orDie',
+        description: 'Attendance tracker for students to create subjects, edit timetable, mark and edit their attendance.',
+        tags: ['fullstack', 'PERN', 'Drizzle', 'Neon Postgres'],
+        githubLink: 'https://github.com/cdhananjay/75orDie',
+        liveLink: 'https://seven5ordie.onrender.com/',
     },
 ];
 export default projects;
