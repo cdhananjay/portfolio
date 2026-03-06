@@ -29,7 +29,7 @@ const projects: projectProp[] = [
         description: 'A headless, zero-dependency uno game logic engine written in TypeScript. ',
         tags: ['npm package', 'typescript', 'javascript'],
         githubLink: 'https://github.com/cdhananjay/uno-engine-js',
-        liveLink: 'https://seven5ordie.onrender.com/',
+        liveLink: 'https://www.npmjs.com/package/uno-engine-js',
     },
     {
         image: '/portfolio.png',
