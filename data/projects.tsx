@@ -2,42 +2,28 @@ import type { projectProp } from '@/components/Project';
 
 const projects: projectProp[] = [
     {
+        image: '/email-verifier-website.png',
+        title: 'Email Verifier - Discord Bot',
+        description: "Discord bot to restrict server access to verified institutional email domains without exposing anyone's full identity.",
+        tags: ["discord.js", "Nextjs", "BetterAuth", "Postgres", "Prisma"],
+        githubLink: "https://github.com/cdhananjay/email-verifier",
+        liveLink: "https://email-verifier-bot.vercel.app/"
+    },
+    {
+        image: '/smriti.png',
+        title: 'Smriti - Blog Site',
+        description: "A modern blog platform with full-text search, Markdown editing, and user profiles. Explore blogs on any topic.",
+        tags: ["React", "Express", "Postgres"],
+        githubLink: "https://github.com/cdhananjay/smriti",
+        liveLink: "https://smriti-blog.up.railway.app/"
+    },
+    {
         image: '/75orDie.png',
-        title: '75orDie',
+        title: '75orDie - Attendance tracker',
         description: 'Attendance tracker for students to create subjects, edit timetable, mark and edit their attendance.',
-        tags: ['fullstack', 'PERN', 'Drizzle', 'Neon Postgres'],
+        tags: ['Express', 'React', 'Drizzle', 'Postgres'],
         githubLink: 'https://github.com/cdhananjay/75orDie',
         liveLink: 'https://seven5ordie.onrender.com/',
-    },
-    {
-        image: '/spoticry.png',
-        title: 'spoticry',
-        description: 'Get roasted for your spotify music taste.',
-        tags: [
-            'fullstack',
-            'nextjs',
-            'gemini API',
-            'spotify API',
-            'better-auth',
-        ],
-        githubLink: 'https://github.com/cdhananjay/spoticry',
-        liveLink: 'https://spoticry-roastme.vercel.app',
-    },
-    {
-        image: '/uno-engine-js.jpg',
-        title: 'uno-engine-js',
-        description: 'A headless, zero-dependency uno game logic engine written in TypeScript. ',
-        tags: ['npm package', 'typescript', 'javascript'],
-        githubLink: 'https://github.com/cdhananjay/uno-engine-js',
-        liveLink: 'https://www.npmjs.com/package/uno-engine-js',
-    },
-    {
-        image: '/portfolio.png',
-        title: 'this website',
-        description: 'smoooooth',
-        tags: ['frontend', 'nextjs', 'ShadCN'],
-        githubLink: 'https://github.com/cdhananjay/portfolio',
-        liveLink: 'https://dhananjayc.vercel.app',
     },
 
 ];

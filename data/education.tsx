@@ -7,8 +7,8 @@ const educationItems: tabItemProp[] = [
         title: 'Indian Institute of Information Technology, Nagpur',
         subtitle: 'B.Tech in Computer Science & Engineering',
         description: [
+            'Current CGPA after first year: 9.2',
             'Achieved 4th place in Rebranding Wars at ESummit 2026 for redesigning IMBd.com',
-            'Earned a 9.56 SGPA during the first semister',
         ],
         period: '2025 - 2029',
     },

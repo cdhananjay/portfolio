@@ -42,7 +42,7 @@ export default function Home() {
             <Tabs defaultValue="education" className="w-full py-2 my-5">
                 {/*default to work later*/}
                 <TabsList className="w-full">
-                    <TabsTrigger value="work">Work</TabsTrigger>
+                    {/* <TabsTrigger value="work">Work</TabsTrigger> */}
                     <TabsTrigger value="education">Education</TabsTrigger>
                 </TabsList>
                 <TabsContent value="work">
