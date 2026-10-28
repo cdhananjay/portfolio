@@ -31,13 +31,17 @@ const Project = ({
 }: projectProp) => {
     return (
         <Card className=" relative mx-auto w-full pt-0">
-            <Image
-                src={image}
-                width={500}
-                height={500}
-                alt={`screenshot of ${title}`}
-                className="pt-2 px-2 aspect-video"
-            />
+            <div className="w-full px-2 pt-2">
+                <div className={`relative w-full aspect-video overflow-hidden rounded-t-lg ${title.includes('shiuli') ? 'bg-[#faf6ef]' : ''}`}>
+                    <Image
+                        src={image}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 384px"
+                        alt={`screenshot of ${title}`}
+                        className={`${title.includes('shiuli') ? 'object-contain' : 'object-cover'}`}
+                    />
+                </div>
+            </div>
             <CardHeader>
                 <CardTitle className="text-lg">{title}</CardTitle>
                 <CardDescription>{description}</CardDescription>

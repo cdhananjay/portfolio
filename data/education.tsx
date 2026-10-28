@@ -8,7 +8,6 @@ const educationItems: tabItemProp[] = [
         subtitle: 'B.Tech in Computer Science & Engineering',
         description: [
             'Current CGPA after first year: 9.2',
-            'Achieved 4th place in Rebranding Wars at ESummit 2026 for redesigning IMBd.com',
         ],
         period: '2025 - 2029',
     },

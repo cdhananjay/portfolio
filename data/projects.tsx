@@ -18,6 +18,13 @@ const projects: projectProp[] = [
         liveLink: "https://smriti-blog.up.railway.app/"
     },
     {
+        image: '/shiuli.png',
+        title: 'shiuli - Todo List App',
+        description: 'A todo list app for android & ios.',
+        tags: ['Dart', 'Flutter', 'Android', 'ios'],
+        githubLink: 'https://github.com/cdhananjay/shiuli',
+    },
+    {
         image: '/75orDie.png',
         title: '75orDie - Attendance tracker',
         description: 'Attendance tracker for students to create subjects, edit timetable, mark and edit their attendance.',
@@ -25,7 +32,6 @@ const projects: projectProp[] = [
         githubLink: 'https://github.com/cdhananjay/75orDie',
         liveLink: 'https://seven5ordie.onrender.com/',
     },
-
 ];
 export default projects;
 export const featuredProjects: projectProp[] = [projects[0], projects[1]];

@@ -13,7 +13,7 @@ const personalInfo: personalInfo = {
     age: getAge('2006-12-18'), //yyyy-mm-dd
     role: 'aspiring software engineer',
     location: 'India',
-    description: 'sophomore @iiitn cse, learning webdev',
+    description: 'sophomore @iiitn cse',
 };
 
 export default personalInfo;
